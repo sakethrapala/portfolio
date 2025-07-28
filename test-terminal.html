@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="padding: 50px; background: var(--primary); min-height: 100vh;">
+        <h1 style="color: var(--light); text-align: center; margin-bottom: 50px;">Terminal Window Test</h1>
+        
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-button terminal-close"></div>
+                <div class="terminal-button terminal-minimize"></div>
+                <div class="terminal-button terminal-maximize"></div>
+                <div class="terminal-title">test@terminal:~</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-prompt">
+                    echo "Terminal window is now visible!"
+                </div>
+                <div class="terminal-prompt">
+                    ls -la
+                </div>
+                <div class="terminal-prompt">
+                    whoami
+                </div>
+                <div class="terminal-prompt blinking-cursor">
+                    Terminal functionality: WORKING
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
