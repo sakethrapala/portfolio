@@ -65,3 +65,15 @@ if (contactForm) {
         this.reset();
     });
 }
+
+// Debug: Check if terminal windows are present
+document.addEventListener('DOMContentLoaded', function() {
+    const terminals = document.querySelectorAll('.terminal-window');
+    console.log('Terminal windows found:', terminals.length);
+    terminals.forEach((terminal, index) => {
+        console.log(`Terminal ${index + 1}:`, terminal);
+        // Make sure terminals are visible
+        terminal.style.display = 'block';
+        terminal.style.visibility = 'visible';
+    });
+});
